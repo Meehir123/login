@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            background-image: url('download.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent dark background for better readability */
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            color: #ffffff; /* White text for contrast */
+        }
+
+        legend {
+            font-size: 1.5em;
+            color: #ff4081; /* Bright pink for the legend */
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #e4e4f0; /* Light color for labels */
+        }
+
+        input[type="text"], 
+        input[type="password"] {
+            background-color: #f3e5f5; /* Soft lavender background */
+            border: 1px solid #6a1b9a; /* Purple border to match the theme */
+            border-radius: 5px;
+            padding: 8px;
+            width: calc(100% - 20px); /* Full width with padding */
+            margin-top: 5px;
+            color: #000; /* Black text for readability */
+        }
+
+        button {
+            background-color: #6a1b9a; /* Purple background */
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+            margin: 5px;
+        }
+
+        button:hover {
+            background-color: #8e24aa; /* Lighter purple on hover */
+        }
+
+        a {
+            color: #00bcd4; /* Teal color for links */
+            text-decoration: none;
+            display: block;
+            margin-top: 10px;
+        }
+
+        a:hover {
+            color: #ffeb3b; /* Yellow color on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <fieldset>
+            <legend>LOGIN PAGE</legend>
+            <label>UserName
+                <input placeholder="Enter username" type="text">
+            </label>
+            <label>Password
+                <input placeholder="Enter Password" type="password">
+            </label>
+            <a href="home.html"><button type="button">Submit</button></a>
+            <button type="button" style="background-color: rgb(20, 185, 203);">Cancel</button>
+            <a href="reg.html">SIGNUP</a>
+            <a href="help.html">HELP</a>
+        </fieldset>
+    </form>
+
+</body>
+</html>
